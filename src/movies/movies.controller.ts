@@ -23,7 +23,6 @@ import {
   
     @Get(':id')
     getOne(@Param('id') movieId: number): Movie {
-      //return `This will return one movie with the id: ${movieId}`;
       return this.moviesService.getOne(movieId);
     }
   
